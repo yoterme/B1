@@ -12,8 +12,7 @@
 	for (var i = 0; i < phones.length - 1; i++) {
 		for (var j = 0; j < phones.length - i - 1; j++) {
 			if (phones[j][1] > phones [j+1][1]) {
-				//const temp = {...phones[j]};
-				let temp = phones[j+1]
+				let temp = phones[j+1];
 				phones[j+1] = phones[j];
 				phones[j] = [...temp];
 			}
